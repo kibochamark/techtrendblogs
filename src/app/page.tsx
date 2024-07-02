@@ -34,7 +34,7 @@ export default async function Home() {
 
             <div className="mt-8 flex flex-wrap gap-4 text-center">
 
-              <RegisterLink className="block w-full rounded bg-nav px-12 py-3 text-sm font-medium text-black shadow hover:bg-background focus:outline-none focus:ring active:bg-nav sm:w-auto"
+              <RegisterLink className="block w-full rounded bg-nav px-12 py-3 text-sm font-medium text-black shadow hover:bg-nav focus:outline-none focus:ring active:bg-nav sm:w-auto"
               >Get Started</RegisterLink>
 
               <a
