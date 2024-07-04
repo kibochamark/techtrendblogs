@@ -56,9 +56,8 @@ export function BlogCard({ background, avatar, name, date, title, shortdescripti
                             <p className="whitespace-nowrap hover:cursor-pointer rounded-full bg-purple-100 px-2.5 py-0.5 text-sm text-purple-700">#{categories.name}</p>
                         )}
                     </div>
-                    <p className="font-normal text-sm text-gray-50 relative z-10 my-4 whitespace-nowrap overflow-hidden text-ellipsis text-wrap h-20">
-                        {shortdescription}
-                    </p>
+                    <p dangerouslySetInnerHTML={{ __html: shortdescription}} className="font-normal text-sm text-gray-50 relative z-10 my-4 whitespace-nowrap overflow-hidden text-ellipsis text-wrap h-20"></p>
+                        
                     <div className="my-6 relative">
                         <Link href={`/blogs/${id}`} className="bg-nav text-black rounded-md p-2">ReadMore</Link>
                     </div>
